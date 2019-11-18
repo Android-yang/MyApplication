@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--未加载的进度区域-->
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="3dp"/>
+            <solid android:color="#33ffffff"/>
+        </shape>
+    </item>
+
+    <!--缓冲的进度的颜色，一般视频播放的缓冲区域-->
+    <!--<item android:id="@android:id/secondaryProgress">-->
+        <!--<clip>-->
+            <!--<shape>-->
+                <!--<corners android:radius="@dimen/dp2"/>-->
+                <!--<solid android:color="#80c07ab8"/>-->
+            <!--</shape>-->
+        <!--</clip>-->
+    <!--</item>-->
+
+    <!--已经加载完的进度的区域-->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="3dp"/>
+                <solid android:color="#ea5454"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

@@ -3,4 +3,12 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="day_f8f9fc_night_131414">#f8f9fc</color>
+    <color name="day_141a42_night_a4a5b1">#141a42</color>
+    <color name="day_20232b_night_ffffff">#20232b</color>
+    <color name="rr_refresh_faild_text">#a5a7b7</color>
+    <color name="day_f2f4f8_night_20232b">#f2f4f8</color>
+    <color name="load_end">#a5a7b7</color>
+
 </resources>

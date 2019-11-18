@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/load_more_loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/loading_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_marginRight="4dp"/>
+
+        <TextView
+            android:id="@+id/loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="@string/rr_loading"
+            android:textColor="@color/day_20232b_night_ffffff"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/load_more_load_fail_view"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="70dp"
+        android:visibility="gone"
+        android:gravity="center">
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/rr_community_icon_refresh"
+            android:layout_marginRight="2dp"/>
+        <TextView
+            android:id="@+id/tv_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/rr_refresh_faild_text"
+            android:text="@string/community_list_load_faild"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/load_more_load_end_view"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/day_f2f4f8_night_20232b"
+        android:gravity="center"
+        android:visibility="gone">
+        <View
+            android:layout_width="30dp"
+            android:layout_height="1dp"
+            android:background="@color/load_end"
+            android:layout_marginRight="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="13sp"
+            android:lineSpacingExtra="7sp"
+            android:text="THE END"
+            android:textColor="@color/load_end"/>
+        <View
+            android:layout_width="30dp"
+            android:layout_height="1dp"
+            android:background="@color/load_end"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+</FrameLayout>
