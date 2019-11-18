@@ -2,10 +2,32 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/root_layout_ll"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
 
-    <TextView
+    <com.yange.myapplication.widget.recycleview.BadgeTextView
+        android:id="@+id/notice_iv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_gravity="right"
+        android:layout_marginRight="12dp"
+        android:drawableTop="@drawable/notice"
+        android:gravity="center"
+        android:text="Me" />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Btn1"
+        android:textSize="@dimen/dp12" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Btn2"
+        android:textSize="@dimen/dp12" />
+
 </LinearLayout>

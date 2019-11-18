@@ -11,4 +11,6 @@
     <color name="day_f2f4f8_night_20232b">#f2f4f8</color>
     <color name="load_end">#a5a7b7</color>
 
+    <color name="community_notice_corner_bg">#fb2f26</color>
+    <color name="community_notice_corner_text">#ffffff</color>
 </resources>
