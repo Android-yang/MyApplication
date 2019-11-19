@@ -3,7 +3,6 @@
     android:id="@+id/root_layout_ll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
     android:orientation="vertical">
 
     <com.yange.myapplication.widget.recycleview.BadgeTextView
@@ -29,5 +28,11 @@
         android:layout_height="wrap_content"
         android:text="Btn2"
         android:textSize="@dimen/dp12" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:text="fun configUrl(tv: TextView, clickableSpan: ClickableSpan?, style: SpannableStringBuilder, start: Int, end: Int, color: Int) { style.setSpan(clickableSpan, start, end, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE) tv.text = style val foregroundColorSpan = ForegroundColorSpan(color) style.setSpan(foregroundColorSpan, start, end, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE) tv.movementMethod = LinkMovementMethod.getInstance() tv.text = style}"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
