@@ -16,4 +16,24 @@
         <item name="android:maxHeight">16dp</item>
     </style>
 
+    <style name="rr_account_text_file_error">
+        <item name="android:textColor">#ea5953</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <declare-styleable name="RRTextInputLayout">
+        <attr name="errorEnable" format="boolean" />
+        <attr name="errorTypeFace" format="reference" />
+        <attr name="errorGravity" format="enum">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <attr name="errorMaxLines" format="integer" />
+        <attr name="updateEditTextBg" format="boolean" />
+        <attr name="updateTextColor" format="boolean" />
+        <attr name="errorHeight" format="dimension" />
+        <attr name="errorPaddingStart" format="dimension" />
+        <attr name="errorDividerVisible" format="boolean" />
+    </declare-styleable>
 </resources>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/root_layout_ll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -29,10 +30,23 @@
         android:text="Btn2"
         android:textSize="@dimen/dp12" />
 
-    <TextView
-        android:id="@+id/tv1"
-        android:text="fun configUrl(tv: TextView, clickableSpan: ClickableSpan?, style: SpannableStringBuilder, start: Int, end: Int, color: Int) { style.setSpan(clickableSpan, start, end, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE) tv.text = style val foregroundColorSpan = ForegroundColorSpan(color) style.setSpan(foregroundColorSpan, start, end, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE) tv.movementMethod = LinkMovementMethod.getInstance() tv.text = style}"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
+    <com.yange.myapplication.widget.PinEntryEditText
+        android:id="@+id/verify_code_edit"
+        android:layout_width="252dp"
+        android:layout_height="74dp"
+        android:paddingBottom="20dp"
+        android:layout_gravity="left"
+        android:background="@null"
+        android:cursorVisible="false"
+        android:textStyle="bold"
+        android:digits="1234567890"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textColor="#141a42"
+        android:textIsSelectable="false"
+        app:pinAnimationType="fromBottom"
+        app:pinBackgroundDrawable="@drawable/bg_verify_code"
+        app:pinBackgroundIsSquare="true"
+        app:pinTextBottomPadding="@dimen/dp16" />
 </LinearLayout>

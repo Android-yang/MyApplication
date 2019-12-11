@@ -2,5 +2,6 @@
     <string name="app_name">My Application</string>
     <string name="rr_loading">loading...</string>
     <string name="community_list_load_faild">Pull to refresh</string>
+    <string name="error_invalid_email">Please enter a valid email address.</string>
 
 </resources>
