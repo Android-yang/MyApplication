@@ -14,3 +14,5 @@ Completable     从来不发射数据，只处理onComplete和onError事件。�
 
 Maybe           能够发射0或者1个数据，要么成功，要么失败。有点类似Optional
 
+
+
