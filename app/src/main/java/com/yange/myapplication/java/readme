@@ -1,0 +1,16 @@
+#####Rxjava使用说明
+
+
+Rxjava的五种观察者模式：
+
+  类型                描述
+Observale       能够发射0个或n个数据，并以成功或错误事件中止
+
+Flowable        能够发射0个或n个数据，并以成功或错误事件中止
+
+Single          只发射单个数据或错误事件
+
+Completable     从来不发射数据，只处理onComplete和onError事件。可以看成Rx的Runnable
+
+Maybe           能够发射0或者1个数据，要么成功，要么失败。有点类似Optional
+
