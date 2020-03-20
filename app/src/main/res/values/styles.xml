@@ -36,4 +36,8 @@
         <attr name="errorPaddingStart" format="dimension" />
         <attr name="errorDividerVisible" format="boolean" />
     </declare-styleable>
+
+    <declare-styleable name="CleanCountEditText">
+        <attr name="txt_size" format="string" />
+    </declare-styleable>
 </resources>
